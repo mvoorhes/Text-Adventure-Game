@@ -150,6 +150,8 @@ def leave_dungeon(player):
         decision = int(input())
         if decision == 1:
             first_left(player)
+            options[decision] = "Open Door"
+            continue
         elif decision == 2:
             first_right(player)
         elif decision == 3:
@@ -198,6 +200,7 @@ def first_right(player):
         else:
             # Brings player back to leave_dungeon()
             pf.print_slowly("You go back to where you were", TEXT_SPEED)
+            return
         
         options.pop(decision)
 
