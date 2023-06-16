@@ -208,7 +208,7 @@ def first_right(player):
 
 def mystery_door(player):
     pf.print_slowly("You have defeated the monster.", TEXT_SPEED)
-    pf.print_slowly("Behind this monster is a door.")
+    pf.print_slowly("Behind this monster is a door.", TEXT_SPEED)
     options = {1: "Open door", 2: ""}
     while len(options) > 0:
         pf.print_options(options, TEXT_SPEED)
